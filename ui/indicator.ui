@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface domain="BudsLink-Companion@maniacx.github.com">
+  <template class="BudsLinkCompanion_Indicator" parent="AdwPreferencesPage">
+    <property name="name">Indicator</property>
+    <property name="title" translatable="yes">Indicator</property>
+    <property name="icon-name">bbm-panel-symbolic</property>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Battery Indicator Settings</property>
+        <child>
+          <object class="AdwActionRow">
+            <property name="title" translatable="yes">Choose Indicator mode</property>
+            <property name="subtitle" translatable="yes">System Indicator: Battery icon in top bar.&#xA;Panel Button: Battery icon with menu.</property>
+            <property name="activatable-widget">indicator_type</property>
+            <child>
+              <object class="GtkDropDown" id="indicator_type">
+                <property name="valign">center</property>
+                <property name="model">indicator_type_model</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup" id="panel_indicator_mode_group">
+        <property name="title" translatable="yes">Panel Button Mode</property>
+        <child>
+          <object class="AdwSwitchRow" id="panel_button_indicator_mode">
+            <property name="title" translatable="yes">Panel button indicator mode.</property>
+            <property name="subtitle" translatable="yes">On: Show one selected device. Off: Show all devices</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup" id="indicator_settings_group">
+        <property name="title" translatable="yes">Indicator Settings</property>
+        <child>
+          <object class="AdwSwitchRow" id="enable_multi_indicator_mode">
+            <property name="title" translatable="yes">Show Multiple Battery Indicators per Device</property>
+            <property name="subtitle" translatable="yes">For devices with multiple batteries, when enabled, shows a separate indicator for each battery. When disabled, shows a single indicator representing the most critical (lowest) battery level of the device.</property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup" id="on_hover_group">
+        <property name="title" translatable="yes">Show Popup on Hover</property>
+        <child>
+          <object class="AdwSwitchRow" id="enable_hover_on_mode">
+            <property name="title" translatable="yes">Show Detailed Info on Hover</property>
+            <property name="subtitle" translatable="yes">Displays a popup with battery info and controls when the mouse pointer hovers over the indicator for a custom delay</property>
+          </object>
+        </child>
+        <child>
+          <object class="AdwSpinRow" id="hover_delay_spinrow">
+            <property name="title" translatable="yes">Hover Activation Delay</property>
+            <property name="subtitle" translatable="yes">Specify the number of seconds the mouse must hover over the indicator before detailed information is displayed.</property>
+            <property name="sensitive" bind-source="enable_hover_on_mode" bind-property="active" bind-flags="sync-create" />
+            <property name="digits">1</property>
+            <property name="adjustment">
+              <object class="GtkAdjustment">
+                <property name="lower">0.2</property>
+                <property name="upper">5</property>
+                <property name="value">1</property>
+                <property name="page-increment">0.5</property>
+                <property name="step-increment">0.1</property>
+              </object>
+            </property>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup">
+        <property name="title" translatable="yes">Tooltips</property>
+        <child>
+          <object class="AdwSwitchRow" id="enable_tooltips">
+            <property name="title" translatable="yes">Enable tooltips</property>
+            <property name="subtitle" translatable="yes">Show tooltips when hovering over unlabeled buttons</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+  <object class="GtkStringList" id="indicator_type_model">
+    <items>
+      <item translatable="yes">System Tray</item>
+      <item translatable="yes">Panel Button</item>
+    </items>
+  </object>
+</interface>

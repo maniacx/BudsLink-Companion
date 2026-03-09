@@ -1,0 +1,11 @@
+{
+  "uuid": "BudsLink-Companion@maniacx.github.com",
+  "name": "BudsLink Companion",
+  "description": "A GNOME extension companion for the BudsLink app. Requires the BudsLink Flatpak app.",
+  "url": "https://github.com/maniacx/BudsLink-Companion",
+  "shell-version": [ "46", "47", "48", "49", "50" ],
+  "session-modes": ["user", "unlock-dialog"],
+  "version": 1,
+  "settings-schema": "org.gnome.shell.extensions.BudsLink-Companion",
+  "gettext-domain": "BudsLink-Companion@maniacx.github.com"
+}

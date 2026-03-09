@@ -1,7 +1,6 @@
 # BudsLink Companion
 
-BudsLink Companion provides desktop environment integrations for the Flatpak application **BudsLink**.
+BudsLink Companion is a GNOME Shell extension for the Flatpak application [**BudsLink**](https://github.com/maniacx/BudsLink).
+It adds a system tray / panel menu integration to the GNOME panel.
 
-See the respective branches for the implementation.
-
-* [GNOME Shell Extension](https://github.com/maniacx/BudsLink-Companion/tree/Gnome-Extensions)
+![GNOME Shell Extension](https://github.com/maniacx/BudsLink-Companion/blob/main/images/gnome-extension.png)
