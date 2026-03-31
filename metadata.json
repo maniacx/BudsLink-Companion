@@ -1,0 +1,22 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "maniacx"
+            }
+        ],
+        "BugReportUrl": "https://github.com/maniacx/BudsLink-Companion/issues",
+        "Category": "Multimedia",
+        "Description": "Companion widget for BudsLink to monitor Battery level and Control ANC of Earbuds/Headset",
+        "Icon": "/icons/BudsLink-Companion.svg",
+        "Id": "com.github.maniacx.BudsLink-Companion",
+        "License": "GPL-3.0+",
+        "Name": "BudsLink Companion",
+        "Version": "0.1.0",
+        "Website": "https://github.com/maniacx/BudsLink-Companion/Plasma-Widget",
+        "EnabledByDefault": true
+    },
+    "X-Plasma-API": "declarativeappletscript",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
