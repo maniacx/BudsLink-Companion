@@ -22,7 +22,6 @@ gnome-extensions pack ./ \
     --extra-source=preferences/ \
     --extra-source=ui/ \
     --extra-source=script/ \
-    --podir=po \
     --force \
 
 if [ $? -ne 0 ]; then 
