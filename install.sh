@@ -21,7 +21,6 @@ gnome-extensions pack ./ \
     --extra-source=lib/ \
     --extra-source=preferences/ \
     --extra-source=ui/ \
-    --extra-source=script/ \
     --podir=po \
     --force \
 
