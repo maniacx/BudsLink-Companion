@@ -1,0 +1,55 @@
+name: "BudsLink Companion Issue"
+description: "Report issues for BudsLink Companion extensions/widgets"
+title: "[Companion]: "
+labels: ["companion", "triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before submitting
+        - Search existing issues before reporting
+        - Log out and log back in once, then test again before submitting
+        - For device-related or application-related issues, report them on the BudsLink repository https://github.com/maniacx/BudsLink/issues
+
+  - type: dropdown
+    id: desktop_env
+    attributes:
+      label: "Desktop Environment"
+      description: "Select the extension/widget you are using"
+      options:
+        - GNOME Extension
+        - Plasma Widget
+        - Cinnamon Applet
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: "Operating System"
+      description: "Example: Fedora Workstation 44, Ubuntu 26.04"
+      placeholder: "Fedora Workstation 44"
+    validations:
+      required: true
+
+  - type: input
+    id: earbuds
+    attributes:
+      label: "Bluetooth Earbuds (Make & Model)"
+      description: "Example: Sony WF-1000XM5, AirPods Pro 2"
+      placeholder: "Sony WF-1000XM5"
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: "Issue Description"
+      description: "Describe the problem clearly"
+      placeholder: |
+        Example:
+        The widget does not show battery updates.
+    validations:
+      required: true
+
