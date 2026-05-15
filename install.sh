@@ -40,6 +40,8 @@ fi
 # --- install plasmoid ---
 echo "Installing plasmoid..."
 
-kpackagetool6 --type Plasma/Applet --upgrade "$SCRIPT_DIR"
+if ! kpackagetool6 --type Plasma/Applet --install "$SCRIPT_DIR" &> /dev/null; then
+        kpackagetool6 --type Plasma/Applet --upgrade "$SCRIPT_DIR"
+fi
 
 echo "Installed: $PLUGIN_ID"
