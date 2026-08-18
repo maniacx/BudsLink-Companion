@@ -89,7 +89,7 @@ Item {
 
                     checked: root.currentState === (buttonIndex + 1)
 
-                    icon.source: Qt.resolvedUrl("../icons/" + modelData.icon)
+                    icon.source: Qt.resolvedUrl("../icons/" + modelData.icon + ".svg")
 
                     ToolTip.visible: hovered
                     ToolTip.text: {
