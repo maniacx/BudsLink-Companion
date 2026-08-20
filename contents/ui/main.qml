@@ -6,6 +6,7 @@ import org.kde.plasma.core as PlasmaCore
 import org.kde.bluezqt as BluezQt
 import org.kde.plasma.workspace.dbus as DBus
 import org.kde.kirigami as Kirigami
+import "Compatibility.js" as Compatibility
 
 PlasmoidItem {
     id: root
@@ -33,7 +34,8 @@ PlasmoidItem {
     property Timer heartbeatTimer
     property int heartbeatInterval: 120 // seconds
 
-    property var compatibleUUIDs: ["74EC2172-0BAD-4D01-8F77-997B2BE0722A", "96CC203E-5068-46AD-B32D-E316F5E069BA", "956C7B26-D49A-4BA8-B03F-B17D393CB6E2", "F8620674-A1ED-41AB-A8B9-DE9AD655729D", "AEAC4A03-DFF5-498F-843A-34487CF133EB", "0000FD2D-0000-1000-8000-00805F9B34FB"]
+    readonly property var compatibleUUIDs: Compatibility.compatibleUUIDs
+    property bool initialized: false
 
     Plasmoid.status: devicesPresent ? PlasmaCore.Types.ActiveStatus : PlasmaCore.Types.HiddenStatus
 
@@ -120,7 +122,8 @@ PlasmoidItem {
     }
 
     Component.onCompleted: {
-        enumerateDevices();
+        updateCompatibleState();
+        initialized = true;
     }
 
     Connections {
@@ -164,7 +167,7 @@ PlasmoidItem {
     onCompatibleDeviceConnectedChanged: {
         if (compatibleDeviceConnected)
             holdService();
-        else
+        else if (initialized)
             releaseService();
     }
 
@@ -184,6 +187,7 @@ PlasmoidItem {
 
             if (!d.paired)
                 continue;
+
             if (d.connected && isCompatible(d)) {
                 compatibleDeviceConnected = true;
                 return;
