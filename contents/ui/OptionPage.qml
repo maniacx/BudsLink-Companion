@@ -21,6 +21,7 @@ ColumnLayout {
         model: root.options
 
         delegate: Loader {
+            Layout.fillWidth: true
             Layout.alignment: Qt.AlignHCenter
             required property string modelData
             sourceComponent: {

@@ -21,7 +21,8 @@ Item {
 
     ColumnLayout {
         id: column
-        anchors.centerIn: parent
+        anchors.left: parent.left
+        anchors.right: parent.right
         spacing: Kirigami.Units.smallSpacing
 
         PlasmaComponents3.Label {
@@ -33,7 +34,7 @@ Item {
 
         RowLayout {
             Layout.alignment: Qt.AlignHCenter
-            spacing: Kirigami.Units.smallSpacing * 2
+            spacing: Kirigami.Units.smallSpacing * 2 + 20
             uniformCellSizes: true
 
             QQC2.ButtonGroup {
@@ -58,6 +59,10 @@ Item {
                         checked: root.currentState === parent.indexValue
                         QQC2.ButtonGroup.group: group
                         Layout.alignment: Qt.AlignHCenter
+                        contentItem: Item {
+                            implicitWidth: 0
+                            implicitHeight: 0
+                        }
 
                         onClicked: {
                             if (!root.device)

@@ -45,9 +45,12 @@ Item {
 
                 QQC2.CheckBox {
                     id: checkbox
-
                     checked: root.device.state[delegateRoot.stateProp] === 1
                     Layout.alignment: Qt.AlignHCenter
+                    contentItem: Item {
+                        implicitWidth: 0
+                        implicitHeight: 0
+                    }
 
                     onToggled: {
                         if (!root.device)
