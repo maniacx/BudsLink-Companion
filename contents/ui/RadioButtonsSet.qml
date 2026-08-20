@@ -34,7 +34,7 @@ Item {
 
         RowLayout {
             Layout.alignment: Qt.AlignHCenter
-            spacing: Kirigami.Units.smallSpacing * 2 + 20
+            spacing: Math.max(0, 50 - (repeater.count * 10))
             uniformCellSizes: true
 
             QQC2.ButtonGroup {
@@ -43,6 +43,7 @@ Item {
             }
 
             Repeater {
+                id: repeater
                 model: root.labels
 
                 delegate: ColumnLayout {
@@ -75,6 +76,7 @@ Item {
                         text: delegateRoot.modelData
                         horizontalAlignment: Text.AlignHCenter
                         Layout.alignment: Qt.AlignHCenter
+                        Layout.maximumWidth: 60
                         font.pixelSize: Math.round(Kirigami.Theme.smallFont.pixelSize)
                         elide: Text.ElideRight
                         maximumLineCount: 1
