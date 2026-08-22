@@ -2,6 +2,5 @@
     "uuid": "BudsLink-Companion@maniacx.github.com",
     "name": "BudsLink Companion",
     "description": "A Cinnamon applet companion for the BudsLink app. Requires the BudsLink Flatpak app.",
-    "icon": "budsLink-companion",
     "max-instances": "-1"
 }
