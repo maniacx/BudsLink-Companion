@@ -13,7 +13,7 @@
         "Id": "com.github.maniacx.BudsLink-Companion",
         "License": "GPL-3.0+",
         "Name": "BudsLink Companion",
-        "Version": "0.1.0",
+        "Version": "0.2.0",
         "Website": "https://github.com/maniacx/BudsLink-Companion/Plasma-Widget",
         "EnabledByDefault": true
     },
