@@ -11,7 +11,7 @@
 
 
 * BudsLink Companion provides desktop integration for the Flatpak application BudsLink [**BudsLink**](https://github.com/maniacx/BudsLink).
-* It acts as a bridge between the BudsLink service and the Kde Plasma desktop environment, exposing device controls through a system tray applet.
+* It acts as a bridge between the BudsLink service and the Kde Plasma desktop environment, exposing device controls through a system tray applet or desktop Widget
 
 ## Features
 * Automatically starts the BudsLink service in background mode
