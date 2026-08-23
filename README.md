@@ -14,13 +14,29 @@
 * It acts as a bridge between the BudsLink service and the Kde Plasma desktop environment, exposing device controls through a system tray applet or desktop Widget
 
 ## Features
-* Automatically starts the BudsLink service in background mode
-* Communicates with BudsLink via D-Bus
-* System tray icon with a popup menu
-* Quick access to device controls, including:
-* Battery information
-* Noise control (ANC / transparency modes)
-* Launch Apps Device settings
+* Automatically starts the BudsLink service in the background and communicates with it through D-Bus.
+* Can be used as a system tray/popup widget or placed directly on the desktop.
+* Displays device battery information.
+* Provides quick access to noise-control modes such as ANC and Transparency.
+* Provides quick access to the BudsLink device settings/application for additional features supported by your device.
+
+## Supported Brands 
+BudsLink Companion currently works with devices supported by BudsLink, including:
+
+* AirPods
+* Beats
+* Sony
+* Samsung Galaxy Buds
+* Nothing / CMF
+* Bose
+* Sennheiser
+* Redmi / Xiaomi
+
+Note: Not every model from these brands is currently supported or tested.
+See the complete list of supported and tested models supported by BudsLink app here.
+
+* If your device is supported but not listed in the documentation, please [open an issue on BudsLink](https://github.com/maniacx/BudsLink/issues) and provide the relevant information.
+* If your device is not currently supported, you can also request support by [opening an issue on BudsLink](https://github.com/maniacx/BudsLink/issues).
 
 
 ### Installation
@@ -31,11 +47,7 @@
 cd path/to/extracted-folder
 ./install.sh
 ```
-4. Restart the Plasma shell
-```
-systemctl restart --user plasma-plasmashell
-```
-5. Right click on Panel or Desktop and `Add Widget`.
+4. Right click on Panel or Desktop and `Add Widget`.
 
 ### Uninstallation
 
