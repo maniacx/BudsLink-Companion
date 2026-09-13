@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.maniacx.BudsLink-Companion\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-15 00:07-0600\n"
+"POT-Creation-Date: 2026-08-23 08:08-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/maniacx/Documents/BudsLink-Companion/contents/ui/BatterySetWidget.qml
+#: /run/media/maniacx/Data/Git/BudsLinkCompanion-KDE/contents/ui/BatterySetWidget.qml
 msgid "Battery Level"
 msgstr ""
 
-#: /home/maniacx/Documents/BudsLink-Companion/contents/ui/DeviceHeader.qml
+#: /run/media/maniacx/Data/Git/BudsLinkCompanion-KDE/contents/ui/DeviceHeader.qml
 msgid "Device settings"
 msgstr ""
 
-#: /home/maniacx/Documents/BudsLink-Companion/contents/ui/main.qml
+#: /run/media/maniacx/Data/Git/BudsLinkCompanion-KDE/contents/ui/main.qml
 msgid "Demo Device"
 msgstr ""
