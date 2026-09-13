@@ -17,8 +17,10 @@ if ! command -v msgmerge >/dev/null 2>&1; then
     exit 1
 fi
 
+cd "$SCRIPT_DIR"
+
 mapfile -t SOURCE_FILES < <(
-    find "$SCRIPT_DIR/contents" \
+    find contents \
         \( -name '*.qml' -o -name '*.js' \) \
         -type f \
         -print \

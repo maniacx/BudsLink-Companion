@@ -17,14 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /run/media/maniacx/Data/Git/BudsLinkCompanion-KDE/contents/ui/BatterySetWidget.qml
+#: contents/ui/BatterySetWidget.qml
 msgid "Battery Level"
 msgstr ""
 
-#: /run/media/maniacx/Data/Git/BudsLinkCompanion-KDE/contents/ui/DeviceHeader.qml
+#: contents/ui/DeviceHeader.qml
 msgid "Device settings"
 msgstr ""
 
-#: /run/media/maniacx/Data/Git/BudsLinkCompanion-KDE/contents/ui/main.qml
+#: contents/ui/main.qml
 msgid "Demo Device"
 msgstr ""
