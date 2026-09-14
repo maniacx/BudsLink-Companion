@@ -1,29 +1,47 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-15 09:51+0200\n"
+"PO-Revision-Date: 2026-09-15 07:51+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Translate Toolkit 3.20.0\n"
+
 #: files/BudsLink-Companion@maniacx.github.com/lib/panelPopupMenu.js:116
 msgid "Expand submenu"
-msgstr ""
+msgstr "Laienda alammenüüd"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/popupMenuWidget.js:72
 msgid "Pin to panel"
-msgstr ""
+msgstr "Tõsta ribal esile"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/popupMenuWidget.js:85
 msgid "Device settings"
-msgstr ""
+msgstr "Nutiseadme seadistused"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/popupMenuWidget.js:95
 msgid "Collapse submenu"
-msgstr ""
+msgstr "Ahenda alammenüüd"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/popupMenuWidget.js:101
 msgid "Disconnect"
-msgstr ""
+msgstr "Katkesta ühendus"
 
 #. metadata.json->name
 msgid "BudsLink Companion"
-msgstr ""
+msgstr "BudsLinki kaasnev rakendus"
 
 #. metadata.json->description
 msgid ""
 "A Cinnamon applet companion for the BudsLink app. Requires the BudsLink "
 "Flatpak app."
 msgstr ""
+"Cinnamon rakend BudsLinki rakenduse jaoks. Eeldab BudsLinki Flatpaki "
+"rakenduse kasutamist."
