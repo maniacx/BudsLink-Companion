@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-13 08:25+0200\n"
-"PO-Revision-Date: 2026-09-13 23:09+0000\n"
+"PO-Revision-Date: 2026-09-15 07:51+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/budslink/"
 "budslink-companion-plasma-widget/et/>\n"
@@ -20,8 +20,8 @@ msgstr "Aku laetus"
 
 #: contents/ui/DeviceHeader.qml
 msgid "Device settings"
-msgstr ""
+msgstr "Nutiseadme seadistused"
 
 #: contents/ui/main.qml
 msgid "Demo Device"
-msgstr ""
+msgstr "Demoseade"
