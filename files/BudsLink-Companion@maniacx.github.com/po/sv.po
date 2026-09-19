@@ -1,34 +1,33 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 03:53+0200\n"
-"PO-Revision-Date: 2026-09-14 01:53+0000\n"
+"PO-Revision-Date: 2026-09-18 19:10+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Translate Toolkit 3.20.0\n"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/panelPopupMenu.js:116
 msgid "Expand submenu"
-msgstr ""
+msgstr "Expandera undermenyn"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/popupMenuWidget.js:72
 msgid "Pin to panel"
-msgstr ""
+msgstr "Fäst på panelen"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/popupMenuWidget.js:85
 msgid "Device settings"
-msgstr ""
+msgstr "Enhetsinställningar"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/popupMenuWidget.js:95
 msgid "Collapse submenu"
-msgstr ""
+msgstr "Fäll ihop undermenyn"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/popupMenuWidget.js:101
 msgid "Disconnect"
@@ -36,10 +35,10 @@ msgstr "Koppla från"
 
 #. metadata.json->name
 msgid "BudsLink Companion"
-msgstr ""
+msgstr "BudsLink-kompanjon"
 
 #. metadata.json->description
 msgid ""
 "A Cinnamon applet companion for the BudsLink app. Requires the BudsLink "
 "Flatpak app."
-msgstr ""
+msgstr "En Cinnamon-panelapplet för BudsLink. Kräver BudsLink Flatpak-appen."
