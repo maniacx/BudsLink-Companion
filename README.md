@@ -13,10 +13,34 @@
 * BudsLink Companion provides desktop integration for the Flatpak application BudsLink [**BudsLink**](https://github.com/maniacx/BudsLink).
 * It acts as a bridge between the BudsLink service and the Kde Plasma desktop environment, exposing device controls through a system tray applet or desktop Widget
 
-## Kde Store
+## KDE Store
 <a href="https://store.kde.org/p/2369341">
   <img src="https://github.com/maniacx/BudsLink-Companion/blob/main/images/get-it-on-kde-store.png" alt="Kde Store" width="35%">
 </a>
+
+## BudsLink Flatpak App
+
+<a href="https://flathub.org/apps/io.github.maniacx.BudsLink">
+  <img src="https://github.com/maniacx/BudsLink-Companion/blob/main/images/get-it-on-flathub.png" alt="BudsLink Flatpak App" width="35%">
+</a>
+<br>
+<br>
+<a href="https://github.com/maniacx/BudsLink">
+  <img src="https://github.com/maniacx/BudsLink-Companion/blob/main/images/view-sources-on-github.png" alt="BudsLink Github Sources" width="35%">
+</a>
+<br>
+<br>
+<a href="https://maniacx.github.io/BudsLink/">
+  <img src="https://github.com/maniacx/BudsLink-Companion/blob/main/images/readme.png" alt="BudsLink Documentation" width="35%">
+</a>
+
+
+## Project Translation
+
+<a href="https://hosted.weblate.org/engage/budslink/">
+  <img src="https://github.com/maniacx/BudsLink-Companion/blob/main/images/weblate-logo.png" alt="Project Translation" width="35%">
+</a>
+
 
 ## Features
 * Automatically starts the BudsLink service in the background and communicates with it through D-Bus.
@@ -89,29 +113,5 @@ cd path/to/extracted-folder
 ```
 systemctl restart --user plasma-plasmashell.service 
 ```
-
-## BudsLink Flatpak App
-
-<a href="https://flathub.org/apps/io.github.maniacx.BudsLink">
-  <img src="https://github.com/maniacx/BudsLink-Companion/blob/main/images/get-it-on-flathub.png" alt="BudsLink Flatpak App" width="35%">
-</a>
-<br>
-<br>
-<a href="https://github.com/maniacx/BudsLink">
-  <img src="https://github.com/maniacx/BudsLink-Companion/blob/main/images/view-sources-on-github.png" alt="BudsLink Github Sources" width="35%">
-</a>
-<br>
-<br>
-<a href="https://maniacx.github.io/BudsLink/">
-  <img src="https://github.com/maniacx/BudsLink-Companion/blob/main/images/readme.png" alt="BudsLink Documentation" width="35%">
-</a>
-
-
-## Project Translation
-
-<a href="https://hosted.weblate.org/engage/budslink/">
-  <img src="https://github.com/maniacx/BudsLink-Companion/blob/main/images/weblate-logo.png" alt="Project Translation" width="35%">
-</a>
-
 
 
