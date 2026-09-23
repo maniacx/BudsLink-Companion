@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-13 08:25+0200\n"
-"PO-Revision-Date: 2026-09-13 23:09+0000\n"
+"PO-Revision-Date: 2026-09-23 20:48+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/budslink/budslink-"
 "companion-plasma-widget/de/>\n"
@@ -20,7 +20,7 @@ msgstr "Akkustand"
 
 #: contents/ui/DeviceHeader.qml
 msgid "Device settings"
-msgstr ""
+msgstr "Geräteeinstellungen"
 
 #: contents/ui/main.qml
 msgid "Demo Device"
