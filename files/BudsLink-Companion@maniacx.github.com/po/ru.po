@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-14 03:53+0200\n"
-"PO-Revision-Date: 2026-09-23 20:49+0000\n"
+"PO-Revision-Date: 2026-10-04 10:51+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
@@ -15,20 +15,22 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.20.0\n"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/panelPopupMenu.js:116
+#, fuzzy
 msgid "Expand submenu"
-msgstr ""
+msgstr "Расширить субменю"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/popupMenuWidget.js:72
 msgid "Pin to panel"
-msgstr ""
+msgstr "Закрепить на панели"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/popupMenuWidget.js:85
 msgid "Device settings"
-msgstr ""
+msgstr "Настройки устройства"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/popupMenuWidget.js:95
+#, fuzzy
 msgid "Collapse submenu"
-msgstr ""
+msgstr "Уменьшить субменю"
 
 #: files/BudsLink-Companion@maniacx.github.com/lib/popupMenuWidget.js:101
 msgid "Disconnect"
