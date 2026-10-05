@@ -1,0 +1,8 @@
+.pragma library
+
+var OpoBudsUUID = '0000079a-d102-11e1-9b23-00025b00a5a5';
+
+function isOpoBuds(bluezDeviceProxy) {
+    var uuids = bluezDeviceProxy.UUIDs ?? [];
+    return uuids.includes(OpoBudsUUID);
+}

@@ -6,7 +6,7 @@ import org.kde.plasma.core as PlasmaCore
 import org.kde.bluezqt as BluezQt
 import org.kde.plasma.workspace.dbus as DBus
 import org.kde.kirigami as Kirigami
-import "Compatibility.js" as Compatibility
+import "devices/companionDevices.js" as CompanionDevices
 
 PlasmoidItem {
     id: root
@@ -34,7 +34,6 @@ PlasmoidItem {
     property Timer heartbeatTimer
     property int heartbeatInterval: 120 // seconds
 
-    readonly property var compatibleUUIDs: Compatibility.compatibleUUIDs
     property bool initialized: false
 
     Plasmoid.status: devicesPresent ? PlasmaCore.Types.ActiveStatus : PlasmaCore.Types.HiddenStatus
@@ -153,17 +152,6 @@ PlasmoidItem {
         }
     }
 
-    function isCompatible(device) {
-        const uuids = device.uuids;
-
-        for (let i = 0; i < uuids.length; i++) {
-            if (compatibleUUIDs.includes(uuids[i]))
-                return true;
-        }
-
-        return false;
-    }
-
     onCompatibleDeviceConnectedChanged: {
         if (compatibleDeviceConnected)
             holdService();
@@ -188,7 +176,7 @@ PlasmoidItem {
             if (!d.paired)
                 continue;
 
-            if (d.connected && isCompatible(d)) {
+            if (d.connected && CompanionDevices.isBudsLink(d)) {
                 compatibleDeviceConnected = true;
                 return;
             }
