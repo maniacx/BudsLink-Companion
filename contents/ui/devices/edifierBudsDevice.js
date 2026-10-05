@@ -1,8 +1,8 @@
 .pragma library
 
-var EdifierSppUUID = 'edf00000-edfe-dfed-fedf-edfedfedfedf';
+const EdifierSppUUID = 'edf00000-edfe-dfed-fedf-edfedfedfedf';
 
 function isEdifierBuds(bluezDeviceProxy) {
-    var uuids = bluezDeviceProxy.UUIDs ?? [];
+    const uuids = bluezDeviceProxy.UUIDs ?? [];
     return uuids.includes(EdifierSppUUID);
 }

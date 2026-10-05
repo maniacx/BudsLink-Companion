@@ -1,8 +1,8 @@
 .pragma library
 
-var AirpodsUUID = '74ec2172-0bad-4d01-8f77-997b2be0722a';
+const AirpodsUUID = '74ec2172-0bad-4d01-8f77-997b2be0722a';
 
-var SupportedModels = [
+const SupportedModels = [
     '2002', // AirPods 1st Gen
     '200F', // AirPods 2nd Gen
     '2013', // AirPods 3rd Gen
@@ -34,8 +34,8 @@ var SupportedModels = [
 ];
 
 function isAirpods(bluezDeviceProxy) {
-    var uuids = bluezDeviceProxy.UUIDs ?? [];
-    var modalias = bluezDeviceProxy.Modalias ?? '';
+    const uuids = bluezDeviceProxy.UUIDs ?? [];
+    const modalias = bluezDeviceProxy.Modalias ?? '';
 
     if (!uuids.includes(AirpodsUUID))
         return false;
@@ -43,12 +43,12 @@ function isAirpods(bluezDeviceProxy) {
     if (!modalias)
         return false;
 
-    var regex = /v004Cp([0-9A-Fa-f]{4})d/;
-    var match = modalias.match(regex);
+    const regex = /v004Cp([0-9A-Fa-f]{4})d/;
+    const match = modalias.match(regex);
     if (!match)
         return false;
 
-    var model = match[1].toUpperCase();
+    const model = match[1].toUpperCase();
     return SupportedModels.includes(model);
 }
 

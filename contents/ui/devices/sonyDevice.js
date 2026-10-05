@@ -1,9 +1,9 @@
 .pragma library
 
-var SonyUUIDv1 = '96cc203e-5068-46ad-b32d-e316f5e069ba';
-var SonyUUIDv2 = '956c7b26-d49a-4ba8-b03f-b17d393cb6e2';
+const SonyUUIDv1 = '96cc203e-5068-46ad-b32d-e316f5e069ba';
+const SonyUUIDv2 = '956c7b26-d49a-4ba8-b03f-b17d393cb6e2';
 
-var SupportedModels = [
+const SupportedModels = [
     'v054Cp0DDF', // Sony LinkBuds
     'v054Cp0DF4', // Sony LinkBuds S
     'v054Cp0CE0', // Sony WF-1000XM3
@@ -24,8 +24,8 @@ var SupportedModels = [
 ];
 
 function isSony(bluezDeviceProxy) {
-    var uuids = bluezDeviceProxy.UUIDs ?? [];
-    var modalias = bluezDeviceProxy.Modalias ?? '';
+    const uuids = bluezDeviceProxy.UUIDs ?? [];
+    const modalias = bluezDeviceProxy.Modalias ?? '';
 
     if (!uuids.includes(SonyUUIDv1) && !uuids.includes(SonyUUIDv2))
         return false;

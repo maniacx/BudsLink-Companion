@@ -14,7 +14,7 @@
 .import "./gfpsDevice.js" as Gfps
 
 
-var DeviceDetectors = [
+const DeviceDetectors = [
     Airpods.isAirpods,
     BoseBuds.isBoseBuds,
     GalaxyBuds.isGalaxyBuds,
@@ -30,7 +30,7 @@ var DeviceDetectors = [
 ];
 
 function isBudsLink(device) {
-    var bluezDeviceProxy = {};
+    const bluezDeviceProxy = {};
     bluezDeviceProxy.UUIDs = device.uuids.map(uuid => uuid.toLowerCase());
     bluezDeviceProxy.Name = device.name;
     bluezDeviceProxy.Modalias = device.modalias;

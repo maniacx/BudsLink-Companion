@@ -1,9 +1,9 @@
 .pragma library
 
-var NothingBudsUUID = 'aeac4a03-dff5-498f-843a-34487cf133eb';
+const NothingBudsUUID = 'aeac4a03-dff5-498f-843a-34487cf133eb';
 
 function isNothingBuds(bluezDeviceProxy) {
-    var uuids = bluezDeviceProxy.UUIDs ?? [];
+    const uuids = bluezDeviceProxy.UUIDs ?? [];
     return uuids.includes(NothingBudsUUID);
 }
 
