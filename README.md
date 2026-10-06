@@ -4,9 +4,9 @@ BudsLink Companion provides desktop environment integrations for the Flatpak app
 
 See the respective branches for the implementation.
 
-## [GNOME Shell Extension](https://github.com/maniacx/BudsLink-Companion/tree/Gnome-Extension)
+## [GNOME Shell Extension](https://github.com/maniacx/Bluetooth-Battery-Meter)
 
-<a href="https://github.com/maniacx/BudsLink-Companion/tree/Gnome-Extension">
+<a href="https://github.com/maniacx/Bluetooth-Battery-Meter">
   <img src="images/gnome-extension.png" alt="GNOME Shell Extension" width="270"/>
 </a>
 
