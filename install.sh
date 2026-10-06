@@ -32,7 +32,7 @@ if compgen -G "$SOURCE_DIR/po/*.po" > /dev/null; then
     done
 fi
 
-if ! cinnamon-dbus-command ReloadXlet "$UUID" APPLET; then
+if ! cinnamon-dbus-command ReloadXlet "$UUID" APPLET >/dev/null 2>&1; then
     echo "Restart Cinnamon to load the applet:"
     echo "  X11:     Alt+F2, then enter 'r'"
     echo "  Wayland: Log out and log back in"
