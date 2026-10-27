@@ -11,6 +11,7 @@
 .import "./opoBudsDevice.js" as OpoBuds
 .import "./edifierBudsDevice.js" as EdifierBuds
 .import "./cambrigdeBudsDevice.js" as CambridgeBuds
+.import "./soundcoreDevice.js" as Soundcore
 .import "./gfpsDevice.js" as Gfps
 
 
@@ -25,6 +26,7 @@ const DeviceDetectors = [
     Sony.isSony,
     OpoBuds.isOpoBuds,
     EdifierBuds.isEdifierBuds,
+    Soundcore.isSoundcore,
     CambridgeBuds.isCambridgeBuds,
     Gfps.isGfps,
 ];
