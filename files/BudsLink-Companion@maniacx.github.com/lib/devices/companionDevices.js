@@ -13,6 +13,7 @@ const {isSenhBuds} = Me.lib.devices.senhBudsDevice;
 const {isSony} = Me.lib.devices.sonyDevice;
 const {isOpoBuds} = Me.lib.devices.opoBudsDevice;
 const {isEdifierBuds} = Me.lib.devices.edifierBudsDevice;
+const {isSoundcore} = Me.lib.devices.soundcoreDevice;
 const {isCambridgeBuds} = Me.lib.devices.cambrigdeBudsDevice;
 
 const DeviceDetectors = [
@@ -26,6 +27,7 @@ const DeviceDetectors = [
     isSony,
     isOpoBuds,
     isEdifierBuds,
+    isSoundcore,
     isCambridgeBuds,
     isGfps,
 ];
