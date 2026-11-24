@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-13 08:25+0200\n"
-"PO-Revision-Date: 2026-11-07 11:54+0000\n"
+"PO-Revision-Date: 2026-11-23 18:10+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/budslink/"
 "budslink-companion-plasma-widget/es/>\n"
@@ -20,7 +20,7 @@ msgstr "Nivel de Batería"
 
 #: contents/ui/DeviceHeader.qml
 msgid "Device settings"
-msgstr "Configuración del dispositivo"
+msgstr "Ajustes de dispositivo"
 
 #: contents/ui/main.qml
 msgid "Demo Device"
